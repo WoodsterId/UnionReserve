@@ -14,6 +14,8 @@ import Login from '../login/login';
 import Numpad from '../Main/App';
 
 const MyNavScreen = ({ navigation, Notifications }) => (
+  <View style={{flex:1}}>
+
   <View style={{backgroundColor: '#ffffff',flex:1}}>
     <View style={styles.FormStyle}> 
       <ScrollView>
@@ -39,12 +41,16 @@ const MyNavScreen = ({ navigation, Notifications }) => (
         <View style={{padding:20}}>
           <Numpad />
         </View>
+      </ScrollView>
+    </View>
+  </View>
 
-        <View style={{borderColor:'#000', borderWidth:0.3, marginTop:60}}>
+  <View style={{position:'absolute', left:0, right:0, bottom:0}}>
+        <View style={{borderColor:'#000', borderWidth:0.3, }}>
         </View>
 
         <View style={styles.buttonBottom}>
-          <View style={{padding:20,marginLeft:10}}>
+          <View style={{padding:20,marginLeft:20}}>
             <TouchableOpacity>
               <Text style={{color:'#000'}}>
                 REQUEST
@@ -55,7 +61,7 @@ const MyNavScreen = ({ navigation, Notifications }) => (
           <View style={{borderColor:'#000',borderWidth:0.3}}>
           </View>
 
-          <View style={{padding:20,marginRight:40}}>
+          <View style={{padding:20,marginRight:35}}>
             <TouchableOpacity>
               <Text style={{color:'#000'}}>
                 PAY
@@ -63,8 +69,7 @@ const MyNavScreen = ({ navigation, Notifications }) => (
             </TouchableOpacity>
           </View>
         </View>
-      </ScrollView>
-    </View>
+  </View>
   </View>
 );
 

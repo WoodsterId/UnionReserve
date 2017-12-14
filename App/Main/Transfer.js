@@ -19,32 +19,23 @@ render(){
         <View style={{backgroundColor: '#ffffff',flex:1}}>
             <View style={styles.FormStyle}> 
             <ScrollView>
-                <View style={{padding:20}}>
-                <Numpad />
+
+                <View style={{padding:20,marginTop:50}}>
+                  <Text style={{color:'#000',textAlign:'center'}}>Insert Nominal</Text>
+                  <Numpad />
                 </View>
 
                 <View style={{borderColor:'#000', borderWidth:0.3, marginTop:60}}>
                 </View>
 
                 <View style={styles.buttonBottom}>
-                <View style={{padding:20,marginLeft:10}}>
+                  <View>
                     <TouchableOpacity>
-                    <Text style={{color:'#000'}}>
-                        REQUEST
-                    </Text>
+                      <Text style={{color:'#000', paddingTop:20}}>
+                          Continue
+                      </Text>
                     </TouchableOpacity>
-                </View>
-
-                <View style={{borderColor:'#000',borderWidth:0.3}}>
-                </View>
-
-                <View style={{padding:20,marginRight:40}}>
-                    <TouchableOpacity>
-                    <Text style={{color:'#000'}}>
-                        PAY
-                    </Text>
-                    </TouchableOpacity>
-                </View>
+                  </View>
                 </View>
             </ScrollView>
             </View>
@@ -60,8 +51,8 @@ const styles = StyleSheet.create({
     backgroundColor:'#ffffff'
   },
   buttonBottom:{
-    justifyContent:'space-around',
-    flexDirection:'row'
+    justifyContent:'center',
+    alignItems:'center'
   }
 });
 

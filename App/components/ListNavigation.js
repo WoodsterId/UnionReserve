@@ -13,6 +13,9 @@ import IconNavbar from 'react-native-vector-icons/dist/Feather';
 import IconNavbar2 from 'react-native-vector-icons/dist/MaterialCommunityIcons';
 
 export default class ListNavigation extends Component {
+  transfer(){
+    this.props.navigation.navigate('Transfer')
+  }
   render() {
     return (
       <View>      
@@ -38,7 +41,7 @@ export default class ListNavigation extends Component {
 
         <View style={styles.ListNavbar}>
           <View>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => {this.transfer()}}>
               <Text style={{fontSize:15,color:'#000',margin:10}}>
                 <IconNavbar name="refresh-cw"size={17}/>     Transfer
               </Text>

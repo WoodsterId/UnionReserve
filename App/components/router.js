@@ -4,6 +4,7 @@ import LoginScreen from '../login/login';
 import ForgetPassword from '../login/forgetPassword';
 import DashboardScreen from '../Main/Dashboard';
 import Listnavigation from './ListNavigation';
+import TransferScreen from '../Main/Transfer'
 
 export const Stack = StackNavigator({
   
@@ -46,6 +47,22 @@ export const AfterLogin = StackNavigator({
     navigationOptions: 
       {
         header: null
+      } 
+  },
+  Transfer:{
+    screen:TransferScreen,
+    navigationOptions: 
+      {
+        headerStyle:
+          {
+            position: 'absolute',
+            backgroundColor: 'transparent',
+            zIndex: 100,
+            top: 0,
+            left: 0,
+            right: 0,
+          },
+        headerTintColor: 'black'
       } 
   },
 })
